@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: lota;
+    font-size: 125%;
+    text-rendering: optimizeLegibility;
+}
+.container{
+    background: url(back.jpg);
+    height:100vh;
+    background-position: center bottom;
+    padding: 1px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.wrapper{
+    width: 1000px;
+    height: 493px;
+    margin: 100px auto 0 auto;
+    background: white;
+    position:relative;
+}
+.dice{
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    top: 125px;
+    left: 420px;
+    box-shadow:1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+/*******************
+       BUTTON
+********************/
+button{
+    position: absolute;
+    border: none;
+    outline: none;
+    padding: 6px 13px 6px 13px; 
+    text-transform: uppercase;
+    font-size: 70%;
+    cursor: pointer;
+    background: none;
+    font-size: 1em;
+    transition: transform 200ms;
+    }
+button:active{
+    transform:scale(0.9)
+}
+.newGame{
+    top: 20px;
+    left: 415px;
+}
+.rollDice{
+    top: 320px;
+    left:415px;
+}
+.hold{
+    top: 370px;
+    left: 435px;
+}
+.newGameImg ,
+.rollDiceImg , 
+.holdImg{
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.winner{
+    color: #e74c3c;
+}
+
+/*******************
+        PLAYER-1
+********************/
+.Player-1-panel{
+    width: 500px;
+    display: inline-block;
+    padding-bottom: 80px;
+}
+.active {
+    background: #ecf0f1;
+}
+.active .Player-0 ,
+.active .Player-1 {font-weight: 600;}
+.active .Player-0::after{
+    content: '\2022';
+    position: absolute;
+    top: 60px;
+    left: 320px;
+    display: block;
+    color: #e74c3c;
+}
+.active .Player-1::before{
+    content: '\2022';
+    position: absolute;
+    top: 60px;
+    left: 820px;
+    display: block;
+    color: #e74c3c;
+}
+.Player-0 ,
+.Player-1{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 1.500em;
+}
+.Global-score-0 , 
+.Global-score-1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.500em;
+    color: #e74c3c;
+}
+.Current-score1 , 
+.Current-score2{
+    width: 90px;
+    padding: 5px 0;
+    margin: 180px auto 0 ;
+    text-align: center;
+    background: #3498db;
+}
+.Current-score-0{
+    color: white;
+    padding-top: 8px;
+    font-size: 1.500em;
+}
+/*******************
+        PLAYER-2
+********************/
+.Player-2-panel{
+    float: right;
+    width: 500px;
+    font-size: 100%;
+    padding-bottom: 80px;
+}
+.Current-score2{
+    background:#3498db;
+}
+.Current-score-1{
+    color: white;
+    padding-top: 8px;
+    font-size: 1.500em;
+}
